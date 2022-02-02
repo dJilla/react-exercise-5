@@ -15,8 +15,7 @@ export function WeatherResponse() {
 
         <div>
             <h1>Weather Forecast</h1>
-            <h2>{forecast?.name}</h2>
-            <h2>Tonight</h2>
+            <h2>{forecast?.properties.periods}</h2>
         </div>
     );
 }
