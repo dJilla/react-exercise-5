@@ -6,6 +6,7 @@ import { WeatherResponse } from './WeatherResponse';
 function App() {
   return (
     <div className="App">
+      <QuoteResponse></QuoteResponse>
       <WeatherResponse></WeatherResponse>
     </div>
   );

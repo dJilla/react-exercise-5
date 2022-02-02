@@ -15,7 +15,8 @@ export function WeatherResponse() {
 
         <div>
             <h1>Weather Forecast</h1>
-            <h2>{forecast?.properties.periods}</h2>
+            <ul>{forecast?.properties.periods.map(item => <li>{item.name}: {item.temperature}{item.temperatureUnit} {item.detailedForecast}</li>)}</ul>
+            <h3></h3>
         </div>
     );
 }
